@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77734b13cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="game">
+        <div id="icons">
+            <audio id="bgm" src="assets/sounds/bgm.mp3" loop="true" type="audio/mpeg"></audio>
+            <button class="sound"><i class="fa-solid fa-volume-high"></i></button>
+            <i class="fa-solid fa-question" onmouseenter="showInstructions()" onmouseleave="hideInstructions()"></i>
+            <div id="instructions">Counter Kristoph's claims by presenting the appropriate evidence and prove that he is the killer!<br><br>
+            Click through dialogue to advance and click evidence to check their description.<br><br>
+            Be careful, presenting the wrong evidence to a statement will make you lose health.</div>
+        </div>
+        <div>
+            <div id=healthbar-title>Health</div>
+            <div id="healthbar"></div>
+        </div>
+        <div id="click">
+            <audio id="select" src="assets/sounds/select.mp3" type="audio/mpeg"></audio>
+            <audio id="correct" src="assets/sounds/realization.mp3" type="audio/mpeg"></audio>
+            <audio id="damage" src="assets/sounds/damage1.mp3" type="audio/mpeg"></audio>
+            <audio id="breakdown" src="assets/sounds/damage2.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div id="textbox">
+            <div id="name">Kristoph</div>
+            <img src="assets/sprites/01t.webp" id="sprite">
+            <div class="testimony">
+                <audio id="talk" src="assets/sounds/talk.mp3" type="audio/mpeg"></audio>
+                testing.
+            </div>
+        </div>
+        <div id="evidence-container"></div>
+        <div id="evidence-misc">
+            <div id="evidence-description"> </div>
+            <button id="present" onclick="presentEvidence()">Present</button>
+        </div>
+        <div id="winlose">
+            <div id="win-textbox">
+                <h1 id="win-text">You win!</h1>
+                <p id="win-subtext">This is the subtext.</p>
+                <p><button id="restart" onclick="document.location.reload(true)">Retry?</button></p>
+            </div>
+            <audio id="gavel" src="assets/sounds/gavel.mp3" type="audio/mpeg"></audio>
+            <img src="assets/gavel.webp" width="250" height="188" style="border: solid black 2px;">
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

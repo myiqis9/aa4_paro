@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'AceAttorney';
+    src:url('assets/Ace-Attorney.ttf') format('truetype');
+}
+
+body {
+    font-family: 'AceAttorney';
+    background-color: black;
+    background-image: url('');
+}
+
+#game {
+    height: 700px;
+    width: 700px;
+    text-align: left;
+    background-image: url('assets/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    position:sticky;
+}
+
+#winlose {
+    height: 240px;
+    width: 490px;
+    display: none;
+    position: relative;
+    background-color: #44271F;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    z-index: 10;
+    margin-top: -70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#win-textbox {
+    height: 220px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+#win-text {
+    font-size: 28pt;
+}
+
+#win-subtext {
+    font-size: 16pt;
+}
+
+#textbox {
+    background-image: url('assets/textbox.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 480px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#sprite {
+    width: 384px;
+    height: 288px;
+    position: relative;
+    bottom:48px;
+    left:45px;
+}
+
+.testimony {
+    font-family: 'AceAttorney';
+    font-size: 18pt;
+    color: white;
+    position: relative;
+    margin-left:10px;
+    margin-right:10px;
+    bottom:35px;
+    z-index: 5;
+}
+
+#click {
+    background-color: red;
+    opacity: 3%;
+    position: relative;
+    width: 480px;
+    height: 120px;
+    top: 370px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9;
+}
+
+#evidence-container {
+    width: 605px;
+    height: 65px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-top:18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#evidence-misc {
+    width: 580px;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#evidence-description {
+    width: 425px;
+    height:45px;
+    font-family: 'AceAttorney';
+    font-size: 15pt;
+    display: inline-block;
+    justify-content: center;
+    text-align: left;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 7.5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.evidence-button {
+    width:55px;
+    height:55px;
+    cursor: pointer;
+    margin: 2.5px;
+    background-size: cover;
+    border: solid black 2px;
+}
+
+#present {
+    font-family: 'AceAttorney';
+    font-size: 24pt;
+    display: inline-block;
+    margin-left:10px;
+    padding:5px 20px;
+    margin-bottom: 2px;
+    color:white;
+    background-color: #626799;
+    outline: solid 1.5px #8d8d8d;
+    border: solid #4f4f93 2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart {
+    font-family: 'AceAttorney';
+    font-size: 24pt;
+    display: inline-block;
+    padding:5px 20px;
+    margin-bottom: 2px;
+    color:white;
+    background-color: #626799;
+    outline: solid 1.5px #8d8d8d;
+    border: solid #4f4f93 2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#healthbar {
+    position: absolute;
+    margin-left: 46px;
+    margin-top:45px;
+    width:150px;
+    height: 30px;
+    font-size: 21pt;
+    color:#44271F;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 7.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#healthbar-title {
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 23px;
+    font-size: 20pt;
+    color:white;
+    opacity: 80%;
+}
+
+#icons { 
+    position: absolute;
+    color:white;
+    font-size: 21pt;
+    width: 118px;
+    height: 40px;
+    margin-left: 580px;
+    margin-top: 5px;
+    letter-spacing: 16pt;
+    text-align: right;
+    z-index: 10;
+    opacity: 80%;
+}
+
+#name {
+    position: absolute;
+    font-size: 15pt;
+    margin-top: 222px;
+    margin-left: 9px;
+    color:white;
+    letter-spacing: 1pt;
+}
+
+.life {
+    padding: 1px;
+}
+
+.sound {
+    background: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    font-size: 21pt;
+    cursor: pointer;
+    color: white;
+}
+
+#instructions {
+    width: 160px;
+    height: 240px;
+    text-align: left;
+    position: absolute;
+    color: white;
+    background-color: #1f171b;
+    padding: 7px;
+    padding-right: 3px;
+    outline: solid 2.5px #706969;
+    border: solid 2.5px #3e3636;
+    border-radius: 5px;
+    margin-left: 90px;
+    margin-top: -18px;
+    letter-spacing: 0.5pt;
+    font-size: 13pt;
+    visibility: hidden;
+}
+
